@@ -1,0 +1,113 @@
+{
+    "data_center": {
+        "location": "Dallas, TX",
+        "sysadmins": [
+            {
+                "id": 1,
+                "name": "Alice Johnson",
+                "role": "Lead Sysadmin",
+                "email": "alice.johnson@datacenter.com",
+                "phone": "+1-214-555-0198",
+                "shift": "Day",
+                "skills": [ "Linux", "Docker", "Kubernetes", "Ansible" ],
+                "certifications": [ "RHCE", "AWS Certified Solutions Architect" ],
+                "last_access": "2024-11-08T08:45:00Z"
+            },
+            {
+                "id": 2,
+                "name": "Bob Smith",
+                "role": "Junior Sysadmin",
+                "email": "bob.smith@datacenter.com",
+                "phone": "+1-214-555-0134",
+                "shift": "Night",
+                "skills": [ "Linux", "Bash", "Nagios" ],
+                "certifications": [ "CompTIA Linux+", "Cisco CCNA" ],
+                "last_access": "2024-11-08T02:30:00Z"
+            }
+        ],
+        "network_devices": [
+            {
+                "device_id": "R1",
+                "type": "Router",
+                "make": "Cisco",
+                "model": "ISR4431",
+                "ip_address": "192.168.1.1",
+                "status": "Active",
+                "location": "Rack 12A",
+                "last_config_backup": "2024-11-07T22:00:00Z",
+                "interfaces": [
+                    {
+                        "interface_id": "Gig0/0",
+                        "ip_address": "192.168.10.1",
+                        "subnet_mask": "255.255.255.0",
+                        "status": "up",
+                        "connected_device": "Switch1"
+                    },
+                    {
+                        "interface_id": "Gig0/1",
+                        "ip_address": "10.1.1.1",
+                        "subnet_mask": "255.255.255.0",
+                        "status": "down",
+                        "connected_device": null
+                    }
+                ]
+            },
+            {
+                "device_id": "SW1",
+                "type": "Switch",
+                "make": "Cisco",
+                "model": "Catalyst 9300",
+                "ip_address": "192.168.1.2",
+                "status": "Active",
+                "location": "Rack 12B",
+                "last_config_backup": "2024-11-07T22:00:00Z",
+                "interfaces": [
+                    {
+                        "interface_id": "Gig1/0/1",
+                        "status": "up",
+                        "connected_device": "R1"
+                    },
+                    {
+                        "interface_id": "Gig1/0/2",
+                        "status": "up",
+                        "connected_device": "Server01"
+                    }
+                ]
+            }
+        ]
+    },
+    "websites": [
+        {
+            "domain": "example.com",
+            "status": "Active",
+            "server": {
+                "ip_address": "203.0.113.10",
+                "location": "Dallas, TX",
+                "os": "Ubuntu 20.04",
+                "web_server": "Nginx",
+                "ssl_cert_expiration": "2025-04-01T00:00:00Z"
+            },
+            "admin": {
+                "name": "Jake Doe",
+                "email": "jake.doe@example.com",
+                "last_login": "2024-11-05T14:30:00Z"
+            }
+        },
+        {
+            "domain": "testsite.net",
+            "status": "Inactive",
+            "server": {
+                "ip_address": "203.0.113.11",
+                "location": "San Francisco, CA",
+                "os": "CentOS 8",
+                "web_server": "Apache",
+                "ssl_cert_expiration": "2024-12-31T00:00:00Z"
+            },
+            "admin": {
+                "name": "Laura Williams",
+                "email": "laura.williams@testsite.net",
+                "last_login": "2024-10-21T09:15:00Z"
+            }
+        }
+    ]
+}
