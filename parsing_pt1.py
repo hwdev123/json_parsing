@@ -1,10 +1,11 @@
+#! /usr/bin/python3
 from utils.parsed import json_data
     
 json_data: dict = json_data()
 
 data_center, websites = json_data
 
-
+# Basic Parsing and Traversal
 def main():
 # Print IPs of network devices
     print(f"These are the network devices in {data_center}'s IP Addresses: ")

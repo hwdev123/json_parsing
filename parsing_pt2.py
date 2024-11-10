@@ -1,4 +1,7 @@
+#! /usr/bin/python3
 from utils.parsed import json_data
+
+# Filtering Data
 
 data = json_data()
 
